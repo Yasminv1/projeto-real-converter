@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <div class="forms-conversao">
+    <h3>Real Converter</h3>
+        <h6>VALOR EM REAIS</h6>
+
+        <input class="number-input" placeholder="0,00" type="number">
+
+        <h6>MOEDA</h6>
+
+        <select name="moeda" id="moeda">
+            <option value="">Selecione a moeda:</option>
+            <option value="dolar">Dólar</option>
+            <option value="euro">Euro</option>
+            <option value="peso">Peso Argentino</option>
+        </select>
+
+        <br>
+        
+        <button onclick="converter()">Converter valor</button>
+
+        <div class="valor-resultado">
+            <h4 id="resultado">RESULTADO</h4>
+        </div>
+  </div>
+
+  <script>
+    // Guarda os elementos do HTML
+    const valorReal = document.querySelector("input");
+    const selectMoeda = document.querySelector("select");
+    const resultado = document.getElementById("resultado");
+
+    function converter() {
+      const valor = selectMoeda.value;
+      let valorConvertido; // variável fora do if
+
+      if (valor === "dolar") {
+        valorConvertido = valorReal.value / 5.39;
+
+      } else if (valor === "euro") {
+        valorConvertido = valorReal.value / 6.27;
+
+      } else if (valor === "peso") {
+        valorConvertido = valorReal.value / 0.0036;
+
+      } else {
+        alert("Selecione uma moeda para converter!");
+        return;
+      }
+    
+
+    resultado.textContent = `= ${valorConvertido.toFixed(2)} ${valor}`;
+    resultado.style.color = "#fff";
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    background: url('../images/fundo.svg');
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.forms-conversao{
+    background-color: #6a6dca17;
+    min-width: 17%;
+    padding: 30px;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+h6{
+    margin-bottom: 10px;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+h3, h4{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #4e5085b9;
+    align-items: center;
+    text-align: center;
+}
+input, select{
+    border-radius: 5px;
+    border: #a2adec1f solid 1px;
+    padding: 10px;
+    background-color: #32356650;
+    color: #FFF;
+}
+option{
+    background-color: #1c1e5aa6;
+}
+
+button{
+    margin-top: 30px;
+    margin-bottom: 45px;
+    background-color: #2f33ab8e;
+    border-radius: 5px;
+    border: #2f33ab8e;
+    padding: 15px 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #ffffffb6;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+button:hover{
+    background-color: #2f33abb2;
+    color: #ffffff;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.valor-resultado{
+    background-color: #1f2151;
+    border-radius: 10px;
+    border: #464996 solid 1px;
+    padding: 5%;
+    margin: 15px 0 ;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+
+}
